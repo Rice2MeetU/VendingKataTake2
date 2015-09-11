@@ -14,5 +14,8 @@ public class VendingMachineTest {
 		assertEquals("n", testMachine.display("n"));
 		assertEquals("p", testMachine.display("p"));
 	}
+	
+	//@Test
+	//public void whenACoinGoesInTheVendingMachineUnderstandsItsValue
 
 }
