@@ -20,4 +20,23 @@ public class VendingMachine {
 		
 		return currentDisplay;
 	}
+	
+	public String checkPurchase(String productChoice, Double amountInserted){
+		String purchaseResponse;
+		
+		if (productChoice.equals("cola") && amountInserted == 1.00){
+			purchaseResponse = "Thank You";
+		}
+		else if (productChoice.equals("chips") && amountInserted == 0.50){
+			purchaseResponse = "Thank You";
+		}
+		else if (productChoice.equals("candy") && amountInserted == 0.65){
+			purchaseResponse = "Thank You";
+		}
+		else {
+			purchaseResponse = "Insufficient Funds";
+		}
+		
+		return purchaseResponse;
+	}
 }
