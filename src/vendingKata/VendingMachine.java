@@ -15,7 +15,7 @@ public class VendingMachine {
 			currentDisplay = "0.10";
 		}
 		else if (inputCoin.equals("p") || inputCoin.equals("P")){
-			currentDisplay = "0.01";
+			currentDisplay = "Sorry, pennies are not accepted";
 		}
 		
 		return currentDisplay;
