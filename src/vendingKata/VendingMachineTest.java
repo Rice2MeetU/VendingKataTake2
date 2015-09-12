@@ -1,3 +1,7 @@
+/*Author: Alex Saenbandith
+ * Date 9/11/15
+ */
+
 package vendingKata;
 
 import static org.junit.Assert.*;
