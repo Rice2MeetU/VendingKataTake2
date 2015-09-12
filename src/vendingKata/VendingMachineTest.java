@@ -56,6 +56,10 @@ public class VendingMachineTest {
 		//assertSame(0.35, testMachine.dispenseChange("candy", 1.00));
 	}
 	
+	@Test
+	public void whenACustomerWantsTheirCoinsReturned(){
+		assertSame(1.10, testMachine.dispenseChange("return coins", 1.10));
+	}
 	
 
 }

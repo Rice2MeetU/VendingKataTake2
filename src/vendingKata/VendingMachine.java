@@ -74,6 +74,9 @@ public class VendingMachine {
 				remainingChange = (amountInserted - 0.65);
 			}
 		}
+		else if (productChoice.equals("return coins")){
+			remainingChange = amountInserted;
+		}
 		else {
 			remainingChange = 0;
 		}
