@@ -9,3 +9,6 @@ with this second attempt I made an effort to create a project that more resemble
 If this approach is still not what you are looking for I apologize and would greatly appreciate it if you
 could point me in the right direction. I know I have what it takes to be a contributing member of Pillar if 
 given the chance. Again, thank you for your time and I await your feedback in earnest.
+
+Link to previous submission
+https://github.com/Rice2MeetU/VendingMachineKata.git
