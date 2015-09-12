@@ -47,5 +47,15 @@ public class VendingMachineTest {
 		assertEquals("Thank You", testMachine.checkPurchase("chips", 0.50));
 		assertEquals("Insufficient Funds", testMachine.checkPurchase("candy", 0.30));
 	}
+	
+	
+	@Test
+	public void whenAProductIsSelectedAndThereIsChangeLeftAfterThePurchase(){
+		//assertSame(0.10, testMachine.dispenseChange("cola", 1.10));
+		//assertSame(0.00, testMachine.dispenseChange("chips", 0.50));
+		//assertSame(0.35, testMachine.dispenseChange("candy", 1.00));
+	}
+	
+	
 
 }
