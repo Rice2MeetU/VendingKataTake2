@@ -23,27 +23,38 @@ public class VendingMachine {
 	
 	public String checkPurchase(String productChoice, Double amountInserted){
 		String purchaseResponse;
-		Double remainingChange = 0.00;
+		int[] products = new int[3];
+		products[0] = 1;
+		products[1] = 0;
+		products[2] = 3;
+		
 		
 		if (productChoice.equals("cola") && amountInserted >= 1.00){
-			purchaseResponse = "Thank You";
 			
-			if (amountInserted > 1.00){
-				remainingChange = amountInserted - 1.00;
+			if (products[0] == 0){
+				purchaseResponse = "Sold Out";
+			}
+			else {
+				purchaseResponse = "Thank You";
+				products[0] += (-1);
 			}
 		}
 		else if (productChoice.equals("chips") && amountInserted >= 0.50){
-			purchaseResponse = "Thank You";
-			
-			if (amountInserted > 0.50){
-				remainingChange = amountInserted - 0.50;
+			if (products[1] == 0){
+				purchaseResponse = "Sold Out";
+			}
+			else {
+				purchaseResponse = "Thank You";
+				products[1] += (-1);
 			}
 		}
 		else if (productChoice.equals("candy") && amountInserted >= 0.65){
-			purchaseResponse = "Thank You";
-			
-			if (amountInserted > 0.65){
-				remainingChange = amountInserted - 0.65;
+			if (products[2] == 0){
+				purchaseResponse = "Sold Out";
+			}
+			else {
+				purchaseResponse = "Thank You";
+				products[2] += (-1);
 			}
 		}
 		else {
@@ -83,4 +94,5 @@ public class VendingMachine {
 		
 		return remainingChange;
 	}
+	
 }
